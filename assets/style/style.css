@@ -184,6 +184,11 @@ nav ul li a:hover {
 header {
     background: #1D49E3;
     padding: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 .container {
     max-width: 1193px;
@@ -780,6 +785,9 @@ text-decoration: none;
 .menu-btn {
     display: none;
 }
+main {
+    padding-top: 80px;
+}
 @media screen and (min-width: 1200px) {
     h1 {
         min-width: 600px;
@@ -1022,8 +1030,9 @@ h2 {
     .about__info p {
         font-size: 12px;
     }
-    .about__container {
-        border-radius: 70px 70px 40px 40px;
+    .about__container,
+    .about__wrapper {
+        border-radius: 30px;
     }
     .book__wrapper form {
         padding: 40px 25px;
